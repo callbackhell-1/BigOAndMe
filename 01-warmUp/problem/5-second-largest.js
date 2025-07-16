@@ -5,9 +5,10 @@ const secondLargest = (arr) => {
   let secondLargest = Number.NEGATIVE_INFINITY;
 
   for (let i = 0; i < arr.length; i++) {
-if(arr.length<2){
-  return null;
-}
+    //Handled edge case.
+    if (arr.length < 2) {
+      return null;
+    }
 
     if (arr[i] > largest) {
       secondLargest = largest;
